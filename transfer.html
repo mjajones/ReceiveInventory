@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventory Transfer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Inventory Transfer</h1>
+
+  <form id="transferForm">
+    <label for="invoiceOrderDate">Invoice Order Date:</label>
+    <input type="date" id="invoiceOrderDate" name="invoiceOrderDate" required><br><br>
+
+    <label for="invoiceReceivedDate">Invoice Received Date:</label>
+    <input type="date" id="invoiceReceivedDate" name="invoiceReceivedDate" required><br><br>
+
+    <label for="invoiceNumber">Invoice Number:</label>
+    <input type="text" id="invoiceNumber" name="invoiceNumber" required><br><br>
+
+    <label for="locationId">Location:</label> 
+
+    <select id="locationId" name="locationId" required>
+      <option value="1">Madison</option>
+      <option value="2">Hattiesburg</option>
+      <option value="3">Gulfport</option>
+      <option value="5">South Warehouse</option>
+    </select><br><br>
+
+    <div id="productsContainer">
+      </div>
+
+    <button type="submit">Submit Transfer</button>
+  </form>
+
+  <div id="message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
